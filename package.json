@@ -1,0 +1,15 @@
+{
+  "name": "fullstack-template-mern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "scripts": {
+    "server": "npm run dev --prefix ./server",
+    "client": "npm run start --prefix ./client",
+    "client:build": "npm run build --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
